@@ -5,7 +5,30 @@
          <a href="index.html">뒤로가기</a>
          <br />
          <meta chareset="utf-8">
+         <link  rel="stylesheet" type="text/css"href="default.css"/>
+         <style>
+         h1{
+             color: blue;
+         }
+         h2{
+             color: pink;
+         }
+        .class_name{
+            /* .css 중복가능 */
+            color: gray;
+        }
+        #id_name{
+            /* #id 중복불가 */
+            color: violet;
+        }
+         *{
+             font-weight: bold;
+            /* css 초기화 */
+         }
+         </style>
+
     </head>
+
     <body>
           <a href="https://www.google.com" target=>구글로 이동하기</a>
 
@@ -13,7 +36,7 @@
 
           <!-- h1~h6 순번x,깊이(depth)o -->
           <h1>대제목</h1>
-          <h2>중제목</h2>
+          <h2 style="color: green">중제목</h2>
           <h3>소제목</h3>
           <h4>세부</h4>
           <h2>중제목2</h2>
@@ -31,8 +54,8 @@
           <h2>비순차적 목록</h2>
           목록을 순서에 관계없이 나열할때
           <ul>
-              <li>설탕 100g</li>
-              <li>소금100g</li>
+              <li class="class_name">설탕 100g</li>
+              <li id="id_name">소금100g</li>
               <li>물 100ml</li>
           </ul>
           <h2>순차적 목록</h2>
@@ -49,5 +72,77 @@
               <dt>(용어)순차적 목록</dt>
               <dd>(설명)목록을 순서에 맞춰 나열할 때</dd>
           </dl>
-    </body>
+          <!-- a,anchor 닻 -->
+          <a href="./../DP2019/training.html"> 버튼 </a>
+
+          <!-- img tag -->
+          <img src="images/zzang gooooo.jpeg" width="100px"/>
+          <img src="./images/zzang gooooo.jpeg" height="100px"/>
+        
+       
+         <!-- strong,em <>b, i -->
+         <strong>강한강조</strong>
+         <b>볼드체</b>
+
+         <em>강조</em>
+         <i>이텔릭체(기울림 글꼴)</i>
+
+         <!-- ins,del <> u,strike -->
+         <ins>삽입글(첨부)</ins>
+         <u>밑줄</u>
+
+         <del>삭제글</del>
+         <strike>중앙선</strike>
+
+         <!-- sup 윗첨자 ,sub  아랫첨자 -->
+         2<sup>2</sup>:2의 2승
+         H<sub>2</sub>O:물의 원소기호
+
+         <!-- tsble 도표, tr: table row 테이블행, td:table data 칸 -->
+        
+         <style>
+         table,tr,td{border:solid 1px black;}
+         </style>
+         <!-- rowspan 행 확장,colspan 열 확장 -->
+        
+         <table summary= "학과별,학번,이름,전화번호 정보">
+             <caption>학과별 전화번호</caption>
+             <!-- thead, tbody, tfoot -->
+             <thead>
+        <tr>
+             <th scope="col">제목1</th>
+             <th scope="col">제목2</th>
+             <th scope="col">제목3</th>
+             <th scope="col">제목4</th>
+             <th scope="col">제목5</th>
+        </tr>
+        </thead>
+                    
+        <tr>
+            <td colspan="2">1</td>
+            <!--가로로 2칸 차지하기 -->
+            <td rowspan="2">2</td>
+            <!--세로로2칸 차지하기 -->
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+            </tr>
+
+         </table>
+         
+         <!-- div division 구획 구분(블록형-자기 옆으로 오면 밑으로 내려버림 )) -->
+         <div>내용</div>
+         <!-- span 구획 구분(라인형)  -->
+         <span>내용</span>
+         <!-- 의미없이 사용하는 경우가 많음  -->
+         
+
+</body>
+
+
 </html>
