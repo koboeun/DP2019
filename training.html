@@ -7,7 +7,7 @@
          <meta chareset="utf-8">
          <link  rel="stylesheet" type="text/css"href="default.css"/>
          <style>
-         h1{
+         h1{ㅌㄴ
              color: blue;
          }
          h2{
@@ -145,7 +145,7 @@
          <form>
             <input type="text" placeholder="아이디를 입력해 주세요">
             <input type="password" placeholder="비밀번호를 입력해 주세요">
-            <!-- radio는 name이 중요함, 같은 라디오는 같은name-->
+            <!-- radio는 name이 중요함, 같은 라디오는 같은name->중복이 안됨-->
             <input type="radio" name="bt1" value="1">
             <input type="radio" name="bt2" value="2">
             <input type="radio" name="bt3" value="3">
@@ -154,11 +154,29 @@
             <input type="radio" name="bt1" value="2">
             <input type="radio" name="bt1" value="3">
 
+            <!-- checked는 처음부터 체크가 되어있게 하는 옵션 -->
             <input type="checkbox" checked/>
             <input type="checkbox" checked/>
             <input type="checkbox" checked/>
-        
 
+            <!-- 선택박스,콤보박스 -->
+            <!-- 선택할수있는 보기제시, 직접작성 실수방지 -->
+            <select>
+                <option>웹사이트</option>
+                <option>www.naver.com</option>
+                <option>www.google.com</option>
+            </select>
+
+            <!--  여러줄의 문자열을 받음 ,cols(가로 글자수), rows(세로 줄수)-->
+            <textarea cols="30" rows="5">
+
+            </textarea>
+        
+            <input type="button" value="버튼" onclick="alert('테스트 버튼이 눌렸습니다.');" />
+
+            <!-- 제출 버튼 -->
+            <input type="submit" value="제출" />
+            
 
          </form>
         

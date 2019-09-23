@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>CSS</title>
+    <style>
+       b{
+           /* 요소 선택자 */
+           color:royalblue;
+
+       }
+       .c_name{
+           color: greenyellow;
+       }
+       #i_name{
+           color: palevioletred;
+       }
+       #i_name2:before{content: "★";}
+       #i_name2::after{content: "♥︎";/* 꾸미는 글자, css에서는 정보 설명 x */}
+       #i_name2::first-letter{font-size: 60px}
+       #i_name2::first-line{color:purple;}
+            
+     
+    </style>
+    </head>
+    <body>
+        <b>내용1</b>
+        <div class="c_name">클래스</div>    
+        <div id="i_name">아이디</div>
+        <div id="i_name2">가상요소 선택자</div>
+
+        <ul>
+            
+            <li class="con">내용1</li>
+            <li class="con">내용2</li>
+            <li class="con">내용3</li>
+        </ul>
+
+
+    </body>
+</html>
