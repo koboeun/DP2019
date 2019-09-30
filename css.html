@@ -124,7 +124,7 @@
 
         <style>
             .font_test{
-                font-family: NotoSerif-SemiCondensedThin, sans-serif;
+                font-family: 'NotoSerif-SemiCondensedThin', sans-serif;
                 /* small,medium, large 로도 사용가능 */
                 font-size: 10px;
                 /* normal,bold,bolder */
@@ -226,6 +226,21 @@
             <div class="pre">
                 123 45 678
                 910 11
+            </div>
+
+
+            <style>
+                @import url(http://fonts.googleapis.com/earlyaccess/nanumpenscript.css);
+                @import url('https://fonts.googleapis.com/css?family=Mansalva&display=swap');
+                /* import url 들여오기 주소 */
+                .google_font{
+                    font-family: 'NotoSerif-SemiCondensedThin', sans-serif;
+                    /* import후 들여오기 된 폰트의이름을 명시하여 사용함  */
+                    font-family: 'Mansalva', cursive;
+                }
+            </style>
+            <div class="google_font">
+                google_font
             </div>
     </body>
 </html>
