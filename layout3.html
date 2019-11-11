@@ -25,11 +25,26 @@
             width: 30px;
             height: 0px;
             border-bottom: solid 1px gray;
+            margin:10px 0px;
+        }
+        .long_line{
+            width: 90px;
+            height: 0px;
+            border-bottom: solid 1px gray;
+            margin: 10px 0px ;
+            /* 상 하 */
         }
         .card_part{
             width: 310px;
             background-color: white;
             list-style: none;
+            border-right: solid 1px gray;
+            border-bottom: solid 1px gray;
+
+            margin: 20px 40px 20px 0px;
+            /* 상하좌우 */
+            float: left;
+
         }
         .card_part dt{
             font-weight: bolder;
@@ -42,6 +57,36 @@
             margin: 0px;
             padding: 0px;
         }
+        .top_visual div{
+            background-color: black;
+            color: white;
+            display:inline-block;
+            /* 넓이 조절을 할수있다. inline+block */
+            padding: 5px 5px 2px 5px;
+            /* 상우하좌 */
+            position: absolute;
+           bottom: 0px;
+            left: 0px;
+            }
+            .top_visual{
+                position:static;
+                /* 정적인 */
+                position:relative;
+                /* 관계적 */
+                /* relative의 부모는 absolute 자식의 기준이됨 */
+
+            }
+            .top_visual img{
+                display: block;
+            }
+            .bottom_info{
+                padding: 20px;
+            }
+            .bottom_info dl{
+                margin:0px;
+            }
+
+        
         </style>
     </head>
     <body>
@@ -75,6 +120,7 @@
                                 <dt>Dulux Colour Awards</dt>
                                 <dd>
                                     <div>12th October 2011</div>
+                                    <div class="long_line"></div>
                                     <p>A direct mail kit that announces 
                                         the Dulux Colour Awards Competition
                                         has commenced. A collection of posters 
@@ -82,13 +128,14 @@
                                         advertises you add your own colours 
                                         to history.
                                     </p>
+                                    <div class="long_line"></div>
                                     <div>Read On →</div>
                                 </dd>
                             </dl>
                         </div>
                     </li>
                 </ul>
-                <div class="short_line"></div>
+            
             </header>
             <div id="content">
                 <ul>
@@ -102,6 +149,7 @@
                                 <dt>Dulux Colour Awards</dt>
                                 <dd>
                                     <div>12th October 2011</div>
+                                    <div class="long_line"></div>
                                     <p>A direct mail kit that announces 
                                         the Dulux Colour Awards Competition
                                         has commenced. A collection of posters 
@@ -109,11 +157,12 @@
                                         advertises you add your own colours 
                                         to history.
                                     </p>
+                                    <div class="long_line"></div>
                                     <div>Read On →</div>
-                                </dd>
+                               </dd>
                             </dl>
                         </div>
-                    </li><div class="short_line"></div>
+                    
                 </header>
                 <div id="content">
                     <ul>
@@ -127,6 +176,7 @@
                                     <dt>Dulux Colour Awards</dt>
                                     <dd>
                                         <div>12th October 2011</div>
+                                        <div class="long_line"></div>
                                         <p>A direct mail kit that announces 
                                             the Dulux Colour Awards Competition
                                             has commenced. A collection of posters 
@@ -134,11 +184,12 @@
                                             advertises you add your own colours 
                                             to history.
                                         </p>
+                                        <div class="long_line"></div>
                                         <div>Read On →</div>
                                     </dd>
                                 </dl>
                             </div>
-                        </li><div class="short_line"></div>
+                  
                     </header>
                     <div id="content">
                         <ul>
@@ -152,6 +203,7 @@
                                         <dt>Dulux Colour Awards</dt>
                                         <dd>
                                             <div>12th October 2011</div>
+                                            <div class="long_line"></div>
                                             <p>A direct mail kit that announces 
                                                 the Dulux Colour Awards Competition
                                                 has commenced. A collection of posters 
@@ -159,11 +211,12 @@
                                                 advertises you add your own colours 
                                                 to history.
                                             </p>
+                                            <div class="long_line"></div>
                                             <div>Read On →</div>
                                         </dd>
                                     </dl>
                                 </div>
-                            </li><div class="short_line"></div>
+                           
                         </header>
                         <div id="content">
                             <ul>
@@ -177,6 +230,7 @@
                                             <dt>Dulux Colour Awards</dt>
                                             <dd>
                                                 <div>12th October 2011</div>
+                                                <div class="long_line"></div>
                                                 <p>A direct mail kit that announces 
                                                     the Dulux Colour Awards Competition
                                                     has commenced. A collection of posters 
@@ -184,13 +238,14 @@
                                                     advertises you add your own colours 
                                                     to history.
                                                 </p>
+                                                <div class="long_line"></div>
                                                 <div>Read On →</div>
                                             </dd>
                                         </dl>
                                     </div>
-                                </li><div class="short_line"></div>
+                                </li>
                             </header>
-                            <div id="content">
+                        <div id="content">
                                 <ul>
                                     <li class="card_part">
                                         <div class="top_visual">
@@ -202,6 +257,7 @@
                                                 <dt>Dulux Colour Awards</dt>
                                                 <dd>
                                                     <div>12th October 2011</div>
+                                                    <div class="long_line"></div>
                                                     <p>A direct mail kit that announces 
                                                         the Dulux Colour Awards Competition
                                                         has commenced. A collection of posters 
@@ -209,13 +265,14 @@
                                                         advertises you add your own colours 
                                                         to history.
                                                     </p>
+                                                    <div class="long_line"></div>
                                                     <div>Read On →</div>
                                                 </dd>
                                             </dl>
                                         </div>
-                                    </li><div class="short_line"></div>
+                                    </li>
                                 </header>
-                                <div id="content">
+                             <div id="content">
                                     <ul>
                                         <li class="card_part">
                                             <div class="top_visual">
@@ -227,6 +284,7 @@
                                                     <dt>Dulux Colour Awards</dt>
                                                     <dd>
                                                         <div>12th October 2011</div>
+                                                        <div class="long_line"></div>
                                                         <p>A direct mail kit that announces 
                                                             the Dulux Colour Awards Competition
                                                             has commenced. A collection of posters 
@@ -234,11 +292,12 @@
                                                             advertises you add your own colours 
                                                             to history.
                                                         </p>
+                                                        <div class="long_line"></div>
                                                         <div>Read On →</div>
                                                     </dd>
                                                 </dl>
                                             </div>
-                                        </li><div class="short_line"></div>
+                                        </li>
                                     </header>
                                     <div id="content">
                                         <ul>
@@ -252,6 +311,7 @@
                                                         <dt>Dulux Colour Awards</dt>
                                                         <dd>
                                                             <div>12th October 2011</div>
+                                                            <div class="long_line"></div>
                                                             <p>A direct mail kit that announces 
                                                                 the Dulux Colour Awards Competition
                                                                 has commenced. A collection of posters 
@@ -259,11 +319,12 @@
                                                                 advertises you add your own colours 
                                                                 to history.
                                                             </p>
+                                                            <div class="long_line"></div>
                                                             <div>Read On →</div>
                                                         </dd>
                                                     </dl>
                                                 </div>
-                                            </li><div class="short_line"></div>
+                                            </li>
                                         </header>
                                         <div id="content">
                                             <ul>
@@ -277,6 +338,7 @@
                                                             <dt>Dulux Colour Awards</dt>
                                                             <dd>
                                                                 <div>12th October 2011</div>
+                                                                <div class="long_line"></div>
                                                                 <p>A direct mail kit that announces 
                                                                     the Dulux Colour Awards Competition
                                                                     has commenced. A collection of posters 
@@ -284,11 +346,12 @@
                                                                     advertises you add your own colours 
                                                                     to history.
                                                                 </p>
+                                                                <div class="long_line"></div>
                                                                 <div>Read On →</div>
                                                             </dd>
                                                         </dl>
                                                     </div>
-                                                </li><div class="short_line"></div>
+                                                </li>
                                             </header>
                                             <div id="content">
                                                 <ul>
@@ -302,6 +365,7 @@
                                                                 <dt>Dulux Colour Awards</dt>
                                                                 <dd>
                                                                     <div>12th October 2011</div>
+                                                                    <div class="long_line"></div>
                                                                     <p>A direct mail kit that announces 
                                                                         the Dulux Colour Awards Competition
                                                                         has commenced. A collection of posters 
@@ -309,13 +373,25 @@
                                                                         advertises you add your own colours 
                                                                         to history.
                                                                     </p>
+                                                                    <div class="long_line"></div>
                                                                     <div>Read On →</div>
                                                                 </dd>
                                                             </dl>
                                                         </div>
                                                     </li>
-            </div>
-            <footer>footer</footer>
-        </div>
+                                                     <div class="clear"></div>
+                                                     </ul>
+                                                    </div>
+                                                    <footer>
+                                                        <div class="short_line"></div>
+                                                     <img src="images/layout3_icon1.png">
+                                                     <img src="images/layout3_icon2.png">
+                                                     <img src="images/layout3_icon3.png">
+                                                     <img src="images/layout3_icon4.png">
+                                                     <div class="short_line"></div>
+                                                     <div>This website & the Internet Ends hereg</div>
+                                                     <div>Copyright 2011 Showcase Design www.BlazRobar.com</div>
+    </footer>   
+ </div>
     </body>
 </html>
