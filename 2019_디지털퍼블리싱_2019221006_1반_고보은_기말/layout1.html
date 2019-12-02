@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>layout1</title>
+   <br />
+    <a href="index.html">뒤로가기</a>
+    <meta charset="utf-8">
+    <style>
+    /* header,nav,div,footer,h1,ul,li,h2,section{ */
+        /* border:solid 1px; */
+        /* 경계:실선 1픽셀두께 검은색 */
+        /* margin:50px; */
+        /* 바깥여백 50px }*/
+    
+    header>ul>li{
+        float: left;
+        /* 왼쪽 기준으로 흐르듯 정렬  */
+        list-style: none;
+        /*  li의 표시(동그라미) : none(없음); */
+        padding-left: 10px;
+        padding-right:10px;
+        /* 안쪽여백-오/왼: 10px; */
+        border-right: solid 2px gray;
+        /* 경계선 - 오른쪽에만 : 실선 2px 그레이 컬러 */
+    }
+    header>ul>li:nth-child(5){
+        /* li의 5번쨰을 선택 */
+        border:none;
+        /* 경계선 없음 */
+    }
+    header>ul{
+        padding:0px;
+        margin-left: 200px;
+        margin-right: 200px;
+        margin-top: 13px;
+        margin-bottom: 13px;
+    }
+    .clear {clear:both; height:0; overflow:hidden;}
+    /* 클래스명 clear {지움:양쪽;  높이:0;  넘쳤을때:숨김;} */
+    .float_left{
+        float:left;
+    }
+    .float_right{
+        float:right;
+    }
+
+    h1{margin:0px;}
+    h2{margin:1px;}
+
+    #zoom{margin:17px;}
+    #navigation li{
+        float:left;
+        /* 왼쪽 기준으로 둥둥 떠다니듯이 */
+        list-style:none;
+        padding-left: 20px;
+        padding-right:20px;
+    }   
+    #navigation{
+        background-color: #eee;
+    }
+    dd{magin:0px;}
+    dt{
+        margin-top: 25px;
+        margin-bottom:25px;
+        font-weight: bold;
+    }
+   
+
+    div>section:nth-child(1){
+        background-color: #98f;
+    
+    }
+    div>section:nth-child(2){
+        background-color: #5d9;
+    
+    }
+    div>section:nth-child(3){
+        background-color: #f76;
+    
+    }
+    div>section:nth-child(4){
+        background-color: #ec5;
+    
+    }
+    div>section h3{
+        color:white;
+        margin-top: 45px;
+        margin-bottom: 45px;
+    }
+    .content_part{
+        width: 480px;
+        float:left;
+        margin:15px;
+    }
+    div>section>div{
+        width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+        /* 블록형 가운데 태그의 가운데 정렬법  */
+    }
+    footer ul{
+        padding:0px;
+    }
+    footer ul>li{
+        list-style: none; 
+        float: left;
+    }
+    /* footer>ul:nth-child(1)>li{ margin-right:10px;
+        margin-left:10px;
+    }*/
+
+    #footer_div{float: left;}
+    #footer2{float: right;}
+    #footer1>li{
+        padding-left:10px;
+        padding-right:10px;
+        border-right: solid 1px #aaa;
+    }
+    #footer1>li:nth-child(6){
+        border: none;
+    }
+    #footer2>li{
+        margin-left:5px;
+        margin-right:5px;
+    }
+    footer{
+        background-color: #333;
+        color: #ddd;
+    }
+    #wrap{
+        min-width: 1100px;
+        /* 최소넓이  */
+        max-width: 1920px;
+        /*  최대넓이 */
+        margin-left: auto;
+        margin-right: auto;
+    }
+    </style>
+
+
+</head>
+
+
+<body>
+    <div id="wrap">
+        <header>
+            <h1 class="float_left">
+                <a href="#">
+                    <img src="images/layout1_head_logo.jpg">
+                </a>
+            </h1>
+            <!-- 제목(로고도 제목에 포함) -->
+            <ul class="float_left">
+                <li>ABOUT</li>
+                <li>SERVICES</li>
+                <li>WORKS</li>
+                <li>BLOG</li>
+                <li>CONTACT US</li>
+
+                <div class="clear"></div>
+            </ul>
+            <div id="zoom" class="float_right">
+                <img src="images/layout1_head_zoom.jpg">
+            </div>
+                 <div class="clear"></div>
+        </header>
+
+        <nav id="navigation">
+            <h2 class="float_left">See Our Works</h2>
+            <ul class="float_right"> 
+                <li>Web Design</li>
+                <li>Icons</li>
+                <li>Illustrations</li>
+                <li>Misc</li>
+                <div class="clear"></div>
+            </ul>
+            <div class="clear"></div>
+        </nav>
+ 
+    <div>
+        <section>
+             <div>
+            <h3>Web design</h3>
+            <div class="content_part">    
+                <img src="images/layout1_img1.jpg"/>
+                <dl>
+                    <dt>
+                        제목임당 심사임당
+                    </dt>
+                    <dd>
+                        내용가리본드라이기타를딩가딩가
+                    </dd>
+                </dl>
+            </div>
+          
+            <div >
+                 <img src="images/layout1_img2.jpg"/>
+                <dl>
+                    <dt>
+                        제목임당 심사임당
+                    </dt>
+                    <dd>
+                        내용가리본드라이기타를딩가딩가
+                    </dd>
+                </dl>
+            </div>
+            <div class="clear"></div>
+         
+    </section>
+            <section>
+                 <div>
+
+                <h3>Web design</h3>
+                <div class="content_part">
+                    <img src="images/layout1_img3.jpg"/>
+                    <dl>
+                        <dt>
+                            제목임당 심사임당
+                        </dt>
+                        <dd>
+                            내용가리본드라이기타를딩가딩가
+                        </dd>
+                    </dl>
+                </div>  
+                <div>
+        
+            <img src="images/layout1_img4.jpg"/>
+                    <dl>
+                        <dt>
+                            제목임당 심사임당
+                        </dt>
+                        <dd>
+                            내용가리본드라이기타를딩가딩가
+                        </dd>
+                    </dl>
+                </div>
+                <div class="clear"></div>
+        </section>
+                <section>
+                     <div>
+                    <h3>Web design</h3>
+                    <div class="content_part">
+                        <img src="images/layout1_img5.jpg"/>
+                        <dl>
+                            <dt>
+                                제목임당 심사임당
+                            </dt>
+                            <dd>
+                                내용가리본드라이기타를딩가딩가
+                            </dd>
+                        </dl>
+                    </div>
+                    <div>
+            
+                <img src="images/layout1_img6.jpg"/>
+                        <dl>
+                            <dt>
+                                제목임당 심사임당
+                            </dt>
+                            <dd>
+                                내용가리본드라이기타를딩가딩가
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="clear"></div>
+
+            </section>
+                    <section>
+                         <div>
+                        <h3>Web design</h3>
+                        <div class="content_part">
+                            <img src="images/layout1_img7.jpg"/>
+                            <dl>
+                                <dt>
+                                    제목임당 심사임당
+                                </dt>
+                                <dd>
+                                    내용가리본드라이기타를딩가딩가
+                                </dd>
+                            </dl>
+                        </div>
+                        <div>
+                
+                    <img src="images/layout1_img8.jpg"/>
+                            <dl>
+                                <dt>
+                                    제목임당 심사임당
+                                </dt>
+                                <dd>
+                                    내용가리본드라이기타를딩가딩가
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="clear"></div>
+                </section>
+        </div>
+    <footer>
+        <div id="footer_div">
+            <ul id="footer1">
+            <li>Home</li>
+            <li>About</li>
+            <li>Service</li>
+            <li>Work</li>
+            <li>Blog</li>
+            <li> Contact</li>
+            <li>Us</li>
+        </ul>
+        <p>ⓒ 2013 BlueBox. All Right Reserved.</p>
+        <p>the loges in the design are the property of their respective owners/
+            copyright holders.
+        </p> 
+        </div>
+        
+        <ul id="footer2">
+            <li><img src="images/layout1_footer_icon1.png"></li>
+            <li><img src="images/layout1_footer_icon2.png"></li>
+            <li><img src="images/layout1_footer_icon3.png"></li>
+            <li><img src="images/layout1_footer_icon4.png"></li>
+            <li><img src="images/layout1_footer_icon5.png"></li>
+            <li><img src="images/layout1_footer_icon6.png"></li>
+           
+        </ul>  
+        <div class="clear"></div>
+     </footer>
+
+    </div>
+</body>
+
+
+
+
+</html>

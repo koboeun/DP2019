@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+         <title>html연습</title>
+         <a href="index.html">뒤로가기</a>
+         <br />
+         <meta chareset="utf-8">
+         <link  rel="stylesheet" type="text/css"href="default.css"/>
+         <style>
+         h1{
+             color: blue;
+         }
+         h2{
+             color: pink;
+         }
+        .class_name{
+            /* .css 중복가능 */
+            color: gray;
+        }
+        #id_name{
+            /* #id 중복불가 */
+            color: violet;
+        }
+         *{
+             font-weight: bold;
+            /* css 초기화 */
+         }
+         </style>
+
+    </head>
+
+    <body>
+          <a href="https://www.google.com" target=>구글로 이동하기</a>
+
+          <!-- _self,_blank -->
+
+          <!-- h1~h6 순번x,깊이(depth)o -->
+          <h1>대제목</h1>
+          <h2 style="color: green">중제목</h2>
+          <h3>소제목</h3>
+          <h4>세부</h4>
+          <h2>중제목2</h2>
+          <h2>중제목3</h2>
+
+          <p>
+              문단(한가지 주제로 이어지는 글)
+          </p>
+          <hr />
+          <p>
+              주제가 달라지면 새로운 
+              <br />
+              문단이 시작됩니다.
+          </p>
+          <h2>비순차적 목록</h2>
+          목록을 순서에 관계없이 나열할때
+          <ul>
+              <li class="class_name">설탕 100g</li>
+              <li id="id_name">소금100g</li>
+              <li>물 100ml</li>
+          </ul>
+          <h2>순차적 목록</h2>
+          목록을 순서에 맞춰 나열할 때
+          <ol>
+              <li>물을 넣는다.</li>
+              <li>물이 끓으녕 스프를 넣는다.</li>
+              <li>그릇에 담는다.</li>
+              <li>먹는다.</li>
+          </ol>
+          <h2>정의형 목록</h2>
+          문언가를 정의할때
+          <dl>
+              <dt>(용어)순차적 목록</dt>
+              <dd>(설명)목록을 순서에 맞춰 나열할 때</dd>
+          </dl>
+          <!-- a,anchor 닻 -->
+          <a href="./../DP2019/training.html"> 버튼 </a>
+
+          <!-- img tag. -->
+          <img src="./images/zzang.jpeg" width="100px"/>
+          <img src="./images/zzang.jpeg" height="100px"/>
+        
+       
+         <!-- strong,em <>b, i -->
+         <strong>강한강조</strong>
+         <b>볼드체</b>
+
+         <em>강조</em>
+         <i>이텔릭체(기울림 글꼴)</i>
+
+         <!-- ins,del <> u,strike -->
+         <ins>삽입글(첨부)</ins>
+         <u>밑줄</u>
+
+         <del>삭제글</del>
+         <strike>중앙선</strike>
+
+         <!-- sup 윗첨자 ,sub  아랫첨자 -->
+         2<sup>2</sup>:2의 2승
+         H<sub>2</sub>O:물의 원소기호
+
+         <!-- tsble 도표, tr: table row 테이블행, td:table data 칸 -->
+        
+         <style>
+         table,tr,td{border:solid 1px black;}
+         </style>
+         <!-- rowspan 행 확장,colspan 열 확장 -->
+        
+         <table summary= "학과별,학번,이름,전화번호 정보">
+             <caption>학과별 전화번호</caption>
+             <!-- thead, tbody, tfoot -->
+             <thead>
+        <tr>
+             <th scope="col">제목1</th>
+             <th scope="col">제목2</th>
+             <th scope="col">제목3</th>
+             <th scope="col">제목4</th>
+             <th scope="col">제목5</th>
+        </tr>
+        </thead>
+                    
+        <tr>
+            <td colspan="2">1</td>
+            <!--가로로 2칸 차지하기 -->
+            <td rowspan="2">2</td>
+            <!--세로로2칸 차지하기 -->
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+            </tr>
+
+         </table>
+         
+         <!-- div division 구획 구분(블록형-자기 옆으로 오면 밑으로 내려버림 )) -->
+         <div>내용</div>
+         <!-- span 구획 구분(라인형)  -->
+         <span>내용</span>
+         <!-- 의미없이 사용하는 경우가 많음  -->
+         
+         <!-- form 양식지 -->
+         <form>
+            <input type="text" placeholder="아이디를 입력해 주세요">
+            <input type="password" placeholder="비밀번호를 입력해 주세요">
+            <!-- radio는 name이 중요함, 같은 라디오는 같은name->중복이 안됨-->
+            <input type="radio" name="bt1" value="1">
+            <input type="radio" name="bt2" value="2">
+            <input type="radio" name="bt3" value="3">
+
+            <input type="radio" name="bt1" value="1">
+            <input type="radio" name="bt1" value="2">
+            <input type="radio" name="bt1" value="3">
+
+            <!-- checked는 처음부터 체크가 되어있게 하는 옵션 -->
+            <input type="checkbox" checked/>
+            <input type="checkbox" checked/>
+            <input type="checkbox" checked/>
+
+            <!-- 선택박스,콤보박스 -->
+            <!-- 선택할수있는 보기제시, 직접작성 실수방지 -->
+            <select>
+                <option>웹사이트</option>
+                <option>www.naver.com</option>
+                <option>www.google.com</option>
+            </select>
+
+            <!--  여러줄의 문자열을 받음 ,cols(가로 글자수), rows(세로 줄수)-->
+            <textarea cols="30" rows="5">
+
+            </textarea>
+        
+            <input type="button" value="버튼" onclick="alert('테스트 버튼이 눌렸습니다.');" />
+
+            <!-- 제출 버튼 -->
+            <input type="submit" value="제출" />
+"
+            <img src="images/layout3_img6.jpg"alt="thumnail"/>
+                                                <!-- 대체 텍스트 -->
+            <a hresf="http://www.google.com" title="구글로 이동합니다.">구글</a>
+            
+
+         </form>
+        
+
+</body>
+
+
+</html>
